@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Owl</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <h1>Owl Carousel Demo</h1>
+
+    <!-- Carousel -->
+    <div class="owl-carousel">
+      <div class="item"><img src="img/fallroad.jpg"></div>
+      <div class="item"><img src="img/jungle.jpg"></div>
+      <div class="item"><img src="img/lakecliff.jpg"></div>
+      <div class="item"><img src="img/mountain.jpg"></div>
+      <div class="item"><img src="img/wintree.jpg"></div>
+      <div class="item"><img src="img/snow.jpg"></div>
+      <div class="item"><img src="img/canyon.jpg"></div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+          items : 1,
+          autoplay : true,
+          autoplayTimeout : 3000,
+          autoplayHoverPause : true,
+          nav : false,
+          loop: true,
+          margin : 10,
+          dots : true,
+
+
+      })
+     })
+    </script>
+</body>
+</html>
